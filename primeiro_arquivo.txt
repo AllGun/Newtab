@@ -1,0 +1,50 @@
+# Resumo Git e Github
+
+- São duas ferramentas distintas mas ambas servem para versionamento do projeto;
+
+- Reposotórios remotos mais conhecidos: Github, Bitbucket, Gitlab e CodeSummit
+
+
+## Principais comandos
+
+Definir usuário
+$git config user.name + nome
+
+Definir e-mail
+git config user.email + email
+
+Cria um novo repositório local
+$ git init 
+
+Faz uma cópia do repositório remoto
+$ git clone + caminho
+
+Adiciona arquivos no repositório local (head)
+$ git add + nome_arquivo
+
+Identifica e confirma as mudanças que serão enviadas para repositório remoto
+$ git commit -m "Comentário"
+
+Conecta ao servidor remoto
+$ gir remote add origin + caminho
+
+Envia para repositório remoto
+$ git push origin + nome_branch
+
+Cria e seleciona a branch criada
+$ git checkout -b + nome_branch
+
+Alterna entre as branches
+git checkout + nome_branch
+
+Remove a ramificação
+$ git branch -d + nome_branch
+
+Atualiza o repositório local
+$ git pull
+
+Mostra os últimos commits do repositório atual
+$ git log
+
+Mostra os arquivos e pastas que não foram enviados (staging)
+git status
