@@ -2,7 +2,7 @@
 
 - São duas ferramentas distintas mas ambas servem para versionamento do projeto;
 
-- Reposotórios remotos mais conhecidos: Github, Bitbucket, Gitlab e CodeSummit
+- Repositórios remotos mais conhecidos: Github, Bitbucket, Gitlab e CodeSummit
 
 
 ## Principais comandos
