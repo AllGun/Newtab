@@ -52,6 +52,18 @@ h1 {
   margin-right: 18px;
 }
 
+.mobile-menu {
+    margin-right: 18px;
+
+}
+
+.mobile-menu div {
+    width: 18px;
+    height: 2px;
+    background: #333333;
+    margin: 3px;
+}
+
 .type-container {
   margin: 26px 20px 20px 20px;
   display: flex;
@@ -80,7 +92,7 @@ h1 {
   margin-bottom: 10px;
 }
 
-.data-input input {
+.data-input input, select {
   height: 32px;
   border-radius: 4px;
   border: 1px solid #979797;

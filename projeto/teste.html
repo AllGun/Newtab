@@ -27,16 +27,28 @@
           <img src="./img/Logo.svg" alt="" />
         </div>
         <h1>Controle Financeiro</h1>
-        <div id="menu-icon">
-          <img src="" alt="" />
+        <div class="mobile-menu">
+          <div class="line-1"></div>
+          <div class="line-2"></div>
+          <div class="line-3"></div>
         </div>
       </div>
     </header>
     <main>
       <section class="type-container">
         <div class="data-input">
-          <label for="">Tipo de Transação</label>
-          <input type="text" placeholder="Compra" />
+          <label for="gastos">Tipo de Transação</label>
+          <select name="gastos" id="gastos">
+            <option value="" disabled selected>Gastos</option>
+            <option value="alimentacao">Alimentação</option>
+            <option value="compra">Compra</option>
+            <option value="casa">Casa</option>
+            <option value="diversos">Diversos</option>
+            <option value="educacao">Educação</option>
+            <option value="lazer">Lazer</option>
+            <option value="saude">Saúde</option>
+            <option value="transporte">Transporte</option>
+          </select>
         </div>
         <div class="data-input">
           <label for="">Nome da mercadoria</label>
