@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto Teste</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header-container">
+      <div class="status-bar">Status bar</div>
+      <div class="menu-container">
+        <div id="logo-img">
+          <img src="./img/Logo.svg" alt="">
+        </div>
+        <h1>Controle Financeiro</h1>
+        <div id="menu-icon"></div>
+      </div>
+    </header>
+    <main>
+      <section class="type-container">
+        <div class="data-input">
+          <label for="">Tipo de Transação</label>
+          <input type="text" />
+        </div>
+        <div class="data-input">
+          <label for="">Nome da mercadoria</label>
+          <input type="text" />
+        </div>
+        <div class="data-input">
+          <label for="">Valor</label>
+          <input type="text" />
+        </div>
+
+        <button>Adicionar transação</button>
+      </section>
+      <section class="extrato-container">
+        <h2>Extrato de transações</h2>
+        <div class="data-output"></div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
