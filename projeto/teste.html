@@ -16,35 +16,70 @@
   </head>
   <body>
     <header class="header-container">
-      <div class="status-bar">Status bar</div>
+      <div class="status-bar">
+        <div><img id="sinal" src="./img/sinal.svg" alt="" /></div>
+        <div><img src="./img/hora.svg" alt="" /></div>
+        <div><img id="bateria" src="./img/bateria.svg" alt="" /></div>
+      </div>
+
       <div class="menu-container">
         <div id="logo-img">
-          <img src="./img/Logo.svg" alt="">
+          <img src="./img/Logo.svg" alt="" />
         </div>
         <h1>Controle Financeiro</h1>
-        <div id="menu-icon"></div>
+        <div id="menu-icon">
+          <img src="" alt="" />
+        </div>
       </div>
     </header>
     <main>
       <section class="type-container">
         <div class="data-input">
           <label for="">Tipo de Transação</label>
-          <input type="text" />
+          <input type="text" placeholder="Compra" />
         </div>
         <div class="data-input">
           <label for="">Nome da mercadoria</label>
-          <input type="text" />
+          <input type="text" placeholder="Mercadoria" />
         </div>
         <div class="data-input">
           <label for="">Valor</label>
-          <input type="text" />
+          <input type="number" placeholder="R$ 0,00" />
         </div>
 
         <button>Adicionar transação</button>
       </section>
       <section class="extrato-container">
         <h2>Extrato de transações</h2>
-        <div class="data-output"></div>
+
+        <div class="mercadoria-valor">
+          <div>Mercadoria</div>
+          <div>Valor</div>
+        </div>
+
+        <div class="data-output-container">
+          <div class="text-valor-output">
+            <div class="credito-debito">+</div>
+            <div class="text-output">
+              Lorem ipsum dolor sit amet consectetur
+            </div>
+            <div class="valor-output">R$ 12.999,99</div>
+          </div>
+          <div class="text-valor-output">
+            <div class="credito-debito">-</div>
+            <div class="text-output">Quis nostrud exercitation</div>
+            <div class="valor-output">R$ 99,99</div>
+          </div>
+          <div class="text-valor-output">
+            <div class="credito-debito">+</div>
+            <div class="text-output">Lorem ipsum</div>
+            <div class="valor-output">R$ 9,99</div>
+          </div>
+          <div class="total-container">
+            <div class="text-total">Total</div>
+            <div class="valor-total">R$ 12.909,99</div>
+          </div>
+        </div>
       </section>
     </main>
     <footer></footer>
