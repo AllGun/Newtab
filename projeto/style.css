@@ -215,6 +215,12 @@ h1 {
     margin-bottom: 20px;
   }
 
+  #logo-img {
+    width: 30px;
+    height: 30px;
+    margin-left: 22px;
+  }
+
   .mobile-menu {
     margin-right: 18px;
   }
@@ -290,6 +296,82 @@ h1 {
     margin-left: 508px;
     border-radius: 4px;
 
+  }
+
+  .extrato-container {
+    margin: 0 20px 22px 20px;
+    width: 371px;
+    height: 281px;
+  }
+
+  h2 {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 21px;
+    margin-bottom: 19px;
+  }
+
+  .mercadoria-valor {
+    width: 728px;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #333333;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+  }
+
+  .data-output-container {
+    width: 728px;
+    height: 281px;
+    margin-bottom: 34px;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .text-valor-output {
+    width: 728px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #333333;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+  }
+
+  .credito-debito {
+    width: 10%;
+    text-align: center;
+  }
+
+  .text-output {
+    width: 60%;
+  }
+
+  .valor-output {
+    width: 30%;
+    text-align: right;
+    margin-right: 10px;
+  }
+
+  .total-container {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #333333;
+    margin-top: 2px;
+    font-weight: 700;
+    padding-top: 10px;
+  }
+
+  .text-total {
+    width: 60%;
+    margin-left: 36px;
+  }
+
+  .valor-total {
+    margin-right: 10px;
+    text-align: right;
   }
 
 }
