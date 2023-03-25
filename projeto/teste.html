@@ -36,30 +36,32 @@
     </header>
     <main>
       <section class="type-container">
-        <div class="data-input">
-          <label for="gastos">Tipo de Transação</label>
-          <select name="gastos" id="gastos">
-            <option value="" disabled selected>Gastos</option>
-            <option value="alimentacao">Alimentação</option>
-            <option value="compra">Compra</option>
-            <option value="casa">Casa</option>
-            <option value="diversos">Diversos</option>
-            <option value="educacao">Educação</option>
-            <option value="lazer">Lazer</option>
-            <option value="saude">Saúde</option>
-            <option value="transporte">Transporte</option>
-          </select>
+        <h2 class="title-tablet-portrait">Nova transação</h2>
+        <div class="data-container">
+          <div class="data-input data-input-type">
+            <label for="gastos">Tipo de Transação</label>
+            <select name="gastos" id="gastos">
+              <option value="" disabled selected>Gastos</option>
+              <option value="alimentacao">Alimentação</option>
+              <option value="compra">Compra</option>
+              <option value="casa">Casa</option>
+              <option value="diversos">Diversos</option>
+              <option value="educacao">Educação</option>
+              <option value="lazer">Lazer</option>
+              <option value="saude">Saúde</option>
+              <option value="transporte">Transporte</option>
+            </select>
+          </div>
+          <div class="data-input data-input-name">
+            <label for="">Nome da mercadoria</label>
+            <input type="text" placeholder="Mercadoria" />
+          </div>
+          <div class="data-input data-input-cust">
+            <label for="">Valor</label>
+            <input type="number" placeholder="R$ 0,00" />
+          </div>
         </div>
-        <div class="data-input">
-          <label for="">Nome da mercadoria</label>
-          <input type="text" placeholder="Mercadoria" />
-        </div>
-        <div class="data-input">
-          <label for="">Valor</label>
-          <input type="number" placeholder="R$ 0,00" />
-        </div>
-
-        <button>Adicionar transação</button>
+        <button class="add-btn-portrait">Adicionar transação</button>
       </section>
       <section class="extrato-container">
         <h2>Extrato de transações</h2>
