@@ -201,7 +201,7 @@ h1 {
   }
 }
 
-@media screen and (min-width: 768px) and (orientation: portrait) {
+@media screen and (max-width: 768px) and (orientation: portrait) {
   body {
     width: 768px;
     height: 1024px;
@@ -374,4 +374,10 @@ h1 {
     text-align: right;
   }
 
+}
+
+@media screen and (min-width: 1112px) {
+  .status-bar {
+    display: none;
+  }
 }
