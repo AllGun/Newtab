@@ -1,16 +1,5 @@
 @media (min-width: 413px) and (orientation: portrait) {
   
-    header {
-      width: 768px;
-    }
-  
-    main {
-      width: 768px;
-    }
-  
-    footer {
-      width: 768px;
-    }
   
     .status-bar {
       height: 24px;
