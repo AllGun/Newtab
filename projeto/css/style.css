@@ -1,48 +1,15 @@
-body {
-  font-family: "Lato", sans-serif;
-}
-
-.status-bar {
-  color: whitesmoke;
-  background: #000000;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-#sinal {
-  margin-left: 6px;
-}
-
-#bateria {
-  margin-right: 6px;
-}
-
-h1 {
-  font-size: 20px;
-  line-height: 24px;
-  font-family: "Lato", sans-serif;
-  font-weight: 600;
-  color: #333333;
-}
-
-.menu-container {
-  display: flex;
-  justify-content: space-between;
-  /* width: 100%; */
-  height: 60px;
-  background: #e0e0e0;
-  align-items: center;
-}
-
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 412px) and (orientation: portrait) {
   body {
-    width: 411px;
-    height: 100vh;
+    width: 412px;
+    height: 768px;
+  }
+
+  main {
+    height: 87.2vh;
   }
 
   .status-bar {
-    width: 100%;
+    width: 412px;
     height: 24px;
     color: whitesmoke;
     background: #000000;
@@ -51,12 +18,36 @@ h1 {
     align-items: center;
   }
 
+  #sinal {
+    margin-left: 6px;
+  }
+
+  #bateria {
+    margin-right: 6px;
+  }
+
+  h1 {
+    font-size: 20px;
+    line-height: 24px;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    color: #333333;
+  }
+
+  .menu-container {
+    width: 412px;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    background: #e0e0e0;
+    align-items: center;
+  }
+
   #logo-img {
     width: 30px;
     height: 30px;
     margin-left: 22px;
   }
-
 
   .mobile-menu {
     margin-right: 18px;
@@ -70,20 +61,27 @@ h1 {
   }
 
   .type-container {
+    width: 371px;
     margin: 26px 20px 20px 20px;
     display: flex;
     flex-direction: column;
-    width: 371px;
     height: 290px;
     border-bottom: 1px solid #333333;
   }
+
+  .data-container {
+    width: 412px;
+    display: flex;
+    flex-direction: column;
+  }
+
 
   .title-tablet-portrait {
     display: none;
   }
 
   .data-input {
-    width: 100%;
+    width: 371px;
     height: 57px;
     display: flex;
     flex-direction: column;
@@ -91,7 +89,6 @@ h1 {
   }
 
   .data-input label {
-    width: 100%;
     height: 22.22px;
     font-family: "Lato", sans-serif;
     font-style: normal;
@@ -110,7 +107,7 @@ h1 {
   }
 
   button {
-    width: 100%;
+    width: 371px;
     height: 33px;
     margin-bottom: 28.33px;
     border: none;
@@ -133,6 +130,7 @@ h1 {
   }
 
   .mercadoria-valor {
+    width: 412px;
     display: flex;
     justify-content: space-around;
     border-bottom: 1px solid #333333;
@@ -141,7 +139,7 @@ h1 {
   }
 
   .data-output-container {
-    width: 100%;
+    width: 371px;
     height: 187px;
     margin-bottom: 34px;
     font-family: "Lato";
@@ -195,20 +193,61 @@ h1 {
   }
 
   footer {
-    width: 100%;
     height: 8px;
     background: #333333;
   }
 }
 
-@media screen and (max-width: 768px) and (orientation: portrait) {
+@media screen and (min-width: 413px) and (max-width: 768px) and (orientation: portrait) {
   body {
-    width: 100vw;
+    width: 768px;
     height: 1024px;
   }
 
+  header {
+    width: 768px;
+  }
+
+  main {
+    width: 768px;
+  }
+
+  footer {
+    width: 768px;
+  }
+
   .status-bar {
-    width: 100%;
+    height: 24px;
+    color: whitesmoke;
+    background: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #sinal {
+    margin-left: 6px;
+  }
+
+  #bateria {
+    margin-right: 6px;
+  }
+
+  h1 {
+    font-size: 20px;
+    line-height: 24px;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    color: #333333;
+  }
+
+  .menu-container {
+    display: flex;
+    justify-content: space-between;
+    width: 768px;
+    height: 60px;
+    background: #e0e0e0;
+    align-items: center;
   }
 
   .menu-container {
@@ -240,6 +279,7 @@ h1 {
   }
 
   .data-container {
+    width: 728px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -279,7 +319,7 @@ h1 {
     width: 150px;
   }
 
-  .data-input-name{
+  .data-input-name {
     width: 348px;
   }
 
@@ -295,7 +335,6 @@ h1 {
     margin-top: 20px;
     margin-left: 508px;
     border-radius: 4px;
-
   }
 
   .extrato-container {
@@ -321,7 +360,6 @@ h1 {
   }
 
   .data-output-container {
-    width: 728px;
     height: 281px;
     margin-bottom: 34px;
     font-family: "Lato";
@@ -372,12 +410,5 @@ h1 {
   .valor-total {
     margin-right: 10px;
     text-align: right;
-  }
-
-}
-
-@media screen and (min-width: 1112px) {
-  .status-bar {
-    display: none;
   }
 }
