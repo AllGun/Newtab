@@ -3,7 +3,7 @@
         width: 100vw;
     }
   .status-bar {
-    width: 100%;
+    width: 100vw;
     height: 24px;
     color: whitesmoke;
     background: #000000;
@@ -29,15 +29,12 @@
   }
 
   .menu-container {
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: space-between;
     height: 60px;
     background: #e0e0e0;
     align-items: center;
-  }
-
-  .menu-container {
     margin-bottom: 20px;
   }
 
