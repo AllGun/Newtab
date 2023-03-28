@@ -7,9 +7,6 @@
     <title>Projeto | Controle de Gastos</title>
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" /> 
-    <!-- 
-      <link rel="stylesheet" href="./css/tablet.css">
-     -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,7 +22,7 @@
         <div><img id="bateria" src="./img/bateria.svg" alt="" /></div>
       </div>
 
-      <div class="menu-container">
+      <nav class="menu-container">
         <div id="logo-img">
           <img src="./img/Logo.svg" alt="" />
         </div>
@@ -35,13 +32,13 @@
           <div class="line-2"></div>
           <div class="line-3"></div>
         </div>
-      </div>
+      </nav>
     </header>
     <main>
       <section class="type-container">
         <h2 class="title-tablet-portrait">Nova transação</h2>
-        <div class="data-container">
-          <div class="data-input data-input-type">
+      <form class="data-container">
+          <fieldset class="data-input data-input-type">
             <label for="gastos">Tipo de Transação</label>
             <select name="gastos" id="gastos">
               <option value="" disabled selected>Gastos</option>
@@ -54,16 +51,16 @@
               <option value="saude">Saúde</option>
               <option value="transporte">Transporte</option>
             </select>
-          </div>
-          <div class="data-input data-input-name">
+          </fieldset>
+          <fieldset class="data-input data-input-name">
             <label for="">Nome da mercadoria</label>
             <input type="text" placeholder="Mercadoria" />
-          </div>
-          <div class="data-input data-input-cust">
+          </fieldset>
+          <fieldset class="data-input data-input-cust">
             <label for="">Valor</label>
             <input type="number" placeholder="R$ 0,00" />
-          </div>
-        </div>
+          </fieldset>
+        </form>
         <button class="add-btn-portrait">Adicionar transação</button>
       </section>
       <section class="extrato-container">
