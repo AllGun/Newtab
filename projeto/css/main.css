@@ -1,0 +1,220 @@
+body {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+}
+
+header {
+  background: #e2e1e1;
+  margin-bottom: 4vh;
+}
+
+nav {
+  width: 74vw;
+  height: 8vh;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.status-bar {
+  display: none;
+}
+
+h1 {
+  margin-left: 20px;
+}
+
+.nav-right {
+  background: #fcfcfc;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  display: inline-block;
+  margin: 10px 0;
+}
+
+ul li a {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #333333;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  width: 74vw;
+  margin: auto;
+}
+
+.data-container {
+  border: 1px solid #33333333;
+}
+
+.data-container__types {
+  width: 26vw;
+  height: 40vh;
+  border: 1px solid #333333;
+}
+
+.data-container__types-title {
+  text-align: center;
+  margin-top: 2vw;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.data-container__types-deal {
+  width: 24vw;
+  height: 5.7vh;
+  display: flex;
+  flex-direction: column;
+  margin-left: 1vw;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+.data-container__types-deal-text {
+  margin-bottom: 1vh;
+}
+
+.data-container__types-deal-in {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 4px;
+}
+
+.data-container__types-btn {
+  width: 24vw;
+  margin-left: 1vw;
+  margin-bottom: 1vh;
+  margin-top: 1.5vh;
+  height: 4vh;
+  border-radius: 4px;
+  background: #333333;
+  color: #fff;
+}
+
+.output-containerr__values {
+  width: 45vw;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.output-container__values-title {
+  text-align: center;
+  height: 30px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  margin-top: 2vw;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.output-container__values-subtitle {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1.5vw;
+  height: 30px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  border-bottom: 1px solid #333333;
+  align-items: center;
+}
+
+.output-container__cred-debit {
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+  border-bottom: 1px solid #333333;
+  align-items: center;
+}
+
+.output-container__cred-debit-plus {
+  width: 2vw;
+  text-align: center;
+}
+
+.output-container__cred-debit-text {
+  width: 80vw;
+  margin-left: 0.3vw;
+}
+
+.output-container__cred-debit-value {
+  width: 18vw;
+  text-align: right;
+  margin-right: 1.2vw;
+}
+
+.output-container__cred-debit-total-vtotal {
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+  border-top: 1px solid #333333;
+  margin-top: 5px;
+  padding-top: 10px;
+}
+
+.output-container__cred-debit-total {
+  margin-left: 1.5vw;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.output-container__cred-debit-vtotal {
+  margin-right: 1.2vw;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+@media screen and (max-width: 1112px) {
+    .status-bar {
+        display: flex;
+        width: 100vw;
+        height: 24px;
+        background: #151515;
+        justify-content: space-between;
+      }
+
+      main {
+        width: 100vw;
+        margin: 0 20px;
+        display: flex;
+        justify-content: space-around;
+      }
+
+}
+
+@media screen and (max-width: 768px) {
+    .nav-right {
+        display: none;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+}

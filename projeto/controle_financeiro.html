@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projeto | Controle de Gastos</title>
     <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/style.css" /> 
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,24 +24,40 @@
       </div>
 
       <nav class="menu-container">
-        <div id="logo-img">
-          <img src="./img/Logo.svg" alt="" />
+        <div class="nav-left">
+          <div id="logo-img">
+            <img src="./img/Logo.svg" alt="" />
+          </div>
+          <h1>Controle Financeiro</h1>
         </div>
-        <h1>Controle Financeiro</h1>
         <div class="mobile-menu">
           <div class="line-1"></div>
           <div class="line-2"></div>
           <div class="line-3"></div>
         </div>
+
+        <div class="nav-right">
+          <ul>
+            <li><a href="">Dashboard</a></li>
+            <li>|</li>
+            <li><a href="">Resumo</a></li>
+            <li>|</li>
+            <li><a href="">Configurações</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main>
-      <section class="type-container">
-        <h2 class="title-tablet-portrait">Nova transação</h2>
-      <form class="data-container">
-          <fieldset class="data-input data-input-type">
-            <label for="gastos">Tipo de Transação</label>
-            <select name="gastos" id="gastos">
+      <section class="data-container">
+        <form class="data-container__types">
+          <h2 class="data-container__types-title">Nova transação</h2>
+          <fieldset class="data-container__types-deal">
+            <label class="data-container__types-deal-text" for="gastos">Tipo de Transação</label>
+            <select
+              class="data-container__types-deal-in"
+              name="gastos"
+              id="gastos"
+            >
               <option value="" disabled selected>Gastos</option>
               <option value="alimentacao">Alimentação</option>
               <option value="compra">Compra</option>
@@ -52,48 +69,58 @@
               <option value="transporte">Transporte</option>
             </select>
           </fieldset>
-          <fieldset class="data-input data-input-name">
-            <label for="">Nome da mercadoria</label>
-            <input type="text" placeholder="Mercadoria" />
+          <fieldset class="data-container__types-deal">
+            <label class="data-container__types-deal-text" for="">Nome da mercadoria</label>
+            <input
+              class="data-container__types-deal-in"
+              type="text"
+              placeholder="Mercadoria"
+            />
           </fieldset>
-          <fieldset class="data-input data-input-cust">
-            <label for="">Valor</label>
-            <input type="number" placeholder="R$ 0,00" />
+          <fieldset class="data-container__types-deal">
+            <label class="data-container__types-deal-text" for="">Valor</label>
+            <input
+              class="data-container__types-deal-in"
+              type="number"
+              placeholder="R$ 0,00"
+            />
           </fieldset>
+          <button class="data-container__types-btn">Adicionar transação</button>
         </form>
-        <button class="add-btn-portrait">Adicionar transação</button>
       </section>
-      <section class="extrato-container">
-        <h2>Extrato de transações</h2>
 
-        <div class="mercadoria-valor">
-          <div>Mercadoria</div>
-          <div>Valor</div>
-        </div>
+      <section class="output-container">
+        <form class="output-containerr__values">
+          <h2 class="output-container__values-title">Extrato de transações</h2>
 
-        <div class="data-output-container">
-          <div class="text-valor-output">
-            <div class="credito-debito">+</div>
-            <div class="text-output">
-              Lorem ipsum dolor sit amet consectetur
-            </div>
-            <div class="valor-output">R$ 12.999,99</div>
+          <div class="output-container__values-subtitle">
+            <div>Mercadoria</div>
+            <div>Valor</div>
           </div>
-          <div class="text-valor-output">
-            <div class="credito-debito">-</div>
-            <div class="text-output">Quis nostrud exercitation</div>
-            <div class="valor-output">R$ 99,99</div>
+
+          <span class="output-container__cred-debit">
+            <span class="output-container__cred-debit-plus">+</span>
+            <label class="output-container__cred-debit-text" for="">Lorem ipsum dolor sit amet consectetur</label>
+            <output class="output-container__cred-debit-value">R$ 12.999,99</output>
+          </span>
+
+          <span class="output-container__cred-debit">
+            <span class="output-container__cred-debit-plus">-</span>
+            <label class="output-container__cred-debit-text" for="">Quis nostrud exercitation</label>
+            <output class="output-container__cred-debit-value">R$ 99,99</output>
+          </span>
+
+          <span class="output-container__cred-debit">
+            <span class="output-container__cred-debit-plus">+</span>
+            <label class="output-container__cred-debit-text" for="">Lorem ipsum</label>
+            <output class="output-container__cred-debit-value">R$ 9,99</output>
+          </span>
+
+          <div class="output-container__cred-debit-total-vtotal  ">
+            <h3 class="output-container__cred-debit-total">Total</h3>
+            <h3 class="output-container__cred-debit-vtotal">R$ 12.909,99</h3>
           </div>
-          <div class="text-valor-output">
-            <div class="credito-debito">+</div>
-            <div class="text-output">Lorem ipsum</div>
-            <div class="valor-output">R$ 9,99</div>
-          </div>
-          <div class="total-container">
-            <div class="text-total">Total</div>
-            <div class="valor-total">R$ 12.909,99</div>
-          </div>
-        </div>
+        </form>
       </section>
     </main>
     <footer></footer>
